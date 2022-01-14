@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gifting Guide - Order Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
+  <style>
+    .navbar {
+      background-color: whitesmoke;
+      box-shadow: 0px 15px 10px -15px #111;
+      height: 50px;
+      z-index: 2;
+    }
+
+    .logo {
+      color: red;
+      display: inline-block;
+      /* background-color: yellow; */
+    }
+
+    .logo,
+    .fas {
+      margin: 10px auto 10px 15px;
+      font-size: 25px;
+      color: red;
+    }
+
+    .logo,
+    .fas:hover {
+      cursor: pointer;
+      ;
+    }
+
+    #check {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      height: 25vh;
+      background-color: whitesmoke;
+      margin-top: -100vh;
+      transition: all .5s;
+      position: relative;
+      z-index: -1;
+    }
+
+    .links li {
+      list-style-type: none;
+      display: flex;
+      padding-left: 40px;
+    }
+
+    .links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      padding-top: 10px;
+
+      /* margin-left: 25px; */
+    }
+
+    .search, .cart {
+      /* display: inline-block; */
+      float: right;
+      padding-right: 20px;
+    }
+
+    #carticon {
+      color: black;
+    }
+    #check:checked ~ .links{
+      /* display: flex; */
+      /* background-color: red; */
+      margin-top: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <!-- input of checkbox to toggle the burger -->
+      <input id="check" type="checkbox">
+      <label for="check" class="hamburger"><i class="fas fa-bars"></i></label>
+      <div class="logo">Gifting Guide</div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="search">
+        <i class="fas fa-search"></i>
+      </div>
+      <ul class="links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a>
+          <ul class="links2"><br>
+            <li><a href="#">Custom Mobile Case</a></li>
+            <li><a href="#">Photo Mug</a></li>
+            <li><a href="#">Custom Cushion</a></li>
+            <li><a href="#">T-shirt</a></li>
+            <li><a href="#">Fountain</a></li>
+            <li><a href="#">Photo frame</a></li>
+            <li><a href="#">Wooden Collage frame</a></li>
+            <li><a href="#">Led frame</a></li>
+            <li><a href="#">Wall Clock</a></li>
+            <li><a href="#">Father's Day Special</a></li>
+            <li><a href="#">Diwali Candels</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i id="carticon" class="fas fa-box-open"></i>&nbsp;&nbsp;&nbsp;My Orders</a></li>
+        <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End of Header -->
+  <script>
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
