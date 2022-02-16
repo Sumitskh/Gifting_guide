@@ -32,7 +32,6 @@
     .logo,
     .fas:hover {
       cursor: pointer;
-      ;
     }
 
     #check {
@@ -42,8 +41,8 @@
     .links {
       display: flex;
       flex-direction: column;
-      height: 25vh;
-      background-color: white;
+      height: auto;
+      background-color: whitesmoke;
       margin-top: -300vh;
       transition: all .5s;
       position: relative;
@@ -65,12 +64,39 @@
       /* margin-left: 25px; */
     }
     .dropdown1{
-      /* display: inline-flex; */
-      justify-content: space-around;
+      float: left;
+      overflow: hidden;
     }
-    .links2{
+    .dropdown1 .dropbtn{
+      font-size: 16px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-size: 23px;
+            background-color: inherit;
+            margin: 0;
+    }
+    .dropdown-content {
       display: none;
+      background-color: #f1f1f1;
+      height: 130px;
+      min-width: 160px;
+      overflow: scroll;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
     }
+    .dropdown-content a {
+            float: none;
+            color: black;
+            width: 90vw;
+            /* padding: 10px 16px; */
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .links a:hover, .dropbtn:hover{
+          background-color: rgb(197, 191, 191);
+        }
     .search, .cart {
       /* display: inline-block; */
       float: right;
@@ -84,6 +110,9 @@
       /* display: flex; */
       /* background-color: red; */
       margin-top: 0%;
+    }
+    .show{
+        display: block;
     }
   </style>
 </head>
@@ -105,21 +134,24 @@
       <ul class="links">
         <li><a href="#" class="active">Home</a></li>
         <li> 
-          <div class="dropdown1">Shop   <i class="fas fa-angle-down"></i></div>
-          <ul class="links2"><br>
-            <li><a href="#">Custom Mobile Case</a></li>
-            <li><a href="#">Photo Mug</a></li>
-            <li><a href="#">Custom Cushion</a></li>
-            <li><a href="#">T-shirt</a></li>
-            <li><a href="#">Fountain</a></li>
-            <li><a href="#">Photo frame</a></li>
-            <li><a href="#">Wooden Collage frame</a></li>
-            <li><a href="#">Led frame</a></li>
-            <li><a href="#">Wall Clock</a></li>
-            <li><a href="#">Father's Day Special</a></li>
-            <li><a href="#">Diwali Candels</a></li>
-          </ul>
-        </li>
+          <!-- div for dropdown menu for shop -->
+          <div class="dropdown1">
+            <button class="dropbtn" onclick="myFunction()">Shop   <i class="fas fa-angle-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+          <a href="#">Custom Mobile Case</a>
+          <a href="#">Photo Mug</a>
+          <a href="#">Custom Cushion</a>
+          <a href="#">T-shirt</a>
+          <a href="#">Fountain</a>
+          <a href="#">Photo frame</a>
+          <a href="#">Wooden Collage frame</a>
+          <a href="#">Led frame</a>
+          <a href="#">Wall Clock</a>
+          <a href="#">Father's Day Special</a>
+          <a href="#">Diwali Candels</a>
+        </div>
+          </div>
+        <!--  -->
         <li><a href="#">&nbsp;&nbsp;&nbsp;<i id="carticon" class="fas fa-box-open"></i>&nbsp;&nbsp;&nbsp;My Orders</a></li>
         <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Contact me</a></li>
       </ul>
@@ -127,6 +159,11 @@
   </header>
   <!-- End of Header -->
   <script>
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
   </script>
   <script src="index.js"></script>
 </body>
