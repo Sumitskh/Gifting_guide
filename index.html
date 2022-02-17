@@ -9,12 +9,11 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
   <style>
-
     .navbar {
       background-color: whitesmoke;
       box-shadow: 0px 15px 10px -15px #111;
       height: 50px;
-      z-index: 2;
+      z-index: 5;
     }
 
     .logo {
@@ -23,7 +22,10 @@
       /* background-color: yellow; */
     }
 
-    .logo, .hamburger, .cart, .search {
+    .logo,
+    .hamburger,
+    .cart,
+    .search {
       margin: 10px auto 10px 15px;
       font-size: 25px;
       color: red;
@@ -39,23 +41,24 @@
     }
 
     .links {
-      display: flex;
-      flex-direction: column;
+      /* display: flex; */
+      /* flex-direction: column; */
       height: auto;
       background-color: whitesmoke;
-      margin-top: -300vh;
+      margin-top: -150vh;
       transition: all .5s;
       position: relative;
-      z-index: -1;
+      z-index: 2;
     }
 
     .links li {
       list-style-type: none;
       display: flex;
-      padding-left: 40px;
+      padding-left: 4vw;
     }
 
-    .links li a, .dropdown1{
+    .links li a,
+    .dropdown1 {
       text-decoration: none;
       color: black;
       font-size: 25px;
@@ -63,41 +66,49 @@
 
       /* margin-left: 25px; */
     }
-    .dropdown1{
+
+    .dropdown1 {
       float: left;
       overflow: hidden;
     }
-    .dropdown1 .dropbtn{
+
+    .dropdown1 .dropbtn {
       font-size: 16px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            font-size: 23px;
-            background-color: inherit;
-            margin: 0;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-size: 23px;
+      background-color: inherit;
+      margin: 0;
     }
+
     .dropdown-content {
       display: none;
       background-color: #f1f1f1;
       height: 130px;
       min-width: 160px;
       overflow: scroll;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
+
     .dropdown-content a {
-            float: none;
-            color: black;
-            width: 90vw;
-            /* padding: 10px 16px; */
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        .links a:hover, .dropbtn:hover{
-          background-color: rgb(197, 191, 191);
-        }
-    .search, .cart {
+      float: none;
+      color: black;
+      width: 90vw;
+      /* padding: 10px 16px; */
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .links a:hover,
+    .dropbtn:hover {
+      background-color: rgb(197, 191, 191);
+    }
+
+    .search,
+    .cart {
       /* display: inline-block; */
       float: right;
       padding-right: 20px;
@@ -106,13 +117,60 @@
     #carticon {
       color: black;
     }
-    #check:checked ~ .links{
+
+    #check:checked~.links {
       /* display: flex; */
       /* background-color: red; */
-      margin-top: 0%;
+      margin-top: .50%;
     }
-    .show{
-        display: block;
+
+    .show {
+      display: block;
+    }
+
+    #btnforcat {
+      background-color: #111;
+      color: white;
+      cursor: pointer;
+      border: rgb(82, 77, 77) solid;
+      border-radius: 20px;
+      padding: 2px 8px;
+      position: fixed;
+      font-size: 28px;
+      bottom: 10vh;
+      left: 42vw;
+    }
+    .collections h1{
+      text-align: center;
+      padding-top: 18px;
+    }
+    .availableitems h2{
+      padding-left: 5vw;
+    }
+    .cont1{
+      border: #a8a1a1 solid;
+      box-shadow: 0px 15px 10px -15px #111;
+      margin: 10px 10vw;
+      /* padding: 4px; */
+      height: 60vh;
+      width: 20vw;
+      cursor: pointer;
+    }
+    .cont1 img{
+      height: auto;
+      width: -webkit-fill-available;
+    }
+    .discount{
+      background-color: green;
+      text-align: center;
+    }
+    .product h4{
+      text-align: center;
+      font-size: 1em;
+    }
+    .price h3{
+      display: inline-block;
+      background-color: yellow;
     }
   </style>
 </head>
@@ -132,40 +190,62 @@
         <i class="fas fa-search"></i>
       </div>
       <ul class="links">
-        <li><a href="#" class="active">Home</a></li>
-        <li> 
+        <li> <a href="#" class="active">Home</a> </li>
+        <li>
           <!-- div for dropdown menu for shop -->
           <div class="dropdown1">
-            <button class="dropbtn" onclick="myFunction()">Shop   <i class="fas fa-angle-down"></i></button>
+            <button class="dropbtn" onclick="myFunction()">Shop <i class="fas fa-angle-down"></i></button>
             <div id="myDropdown" class="dropdown-content">
-          <a href="#">Custom Mobile Case</a>
-          <a href="#">Photo Mug</a>
-          <a href="#">Custom Cushion</a>
-          <a href="#">T-shirt</a>
-          <a href="#">Fountain</a>
-          <a href="#">Photo frame</a>
-          <a href="#">Wooden Collage frame</a>
-          <a href="#">Led frame</a>
-          <a href="#">Wall Clock</a>
-          <a href="#">Father's Day Special</a>
-          <a href="#">Diwali Candels</a>
-        </div>
+              <a href="#">Custom Mobile Case</a>
+              <a href="#">Photo Mug</a>
+              <a href="#">Custom Cushion</a>
+              <a href="#">T-shirt</a>
+              <a href="#">Fountain</a>
+              <a href="#">Photo frame</a>
+              <a href="#">Wooden Collage frame</a>
+              <a href="#">Led frame</a>
+              <a href="#">Wall Clock</a>
+              <a href="#">Father's Day Special</a>
+              <a href="#">Diwali Candels</a>
+            </div>
           </div>
-        <!--  -->
-        <li><a href="#">&nbsp;&nbsp;&nbsp;<i id="carticon" class="fas fa-box-open"></i>&nbsp;&nbsp;&nbsp;My Orders</a></li>
+          <!--  -->
+        <li><a href="#">&nbsp;&nbsp;&nbsp;<i id="carticon" class="fas fa-box-open"></i>&nbsp;&nbsp;&nbsp;My Orders</a>
+        </li>
         <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Contact me</a></li>
       </ul>
     </nav>
   </header>
   <!-- End of Header -->
+  <div class="mainbody">
+    <div class="collections">
+      <h1>Collections</h1>
+      <div class="availableitems">
+        <h2>Available Items</h2>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/hpXrAa4F.jpeg" alt="img">
+          <div class="discount">80% OFF</div>
+          <div class="product">
+            <h4>Personalised Photo ludo</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 649</del> </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="btnforcat">All Categories</button>
+  </div>
+  <footer>
+
+  </footer>
   <script>
     /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-  </script>
-  <script src="index.js"></script>
-</body>
-
-</html>
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    </script>
+    <script src="index.js"></script>
+    </body>
+    </html>
