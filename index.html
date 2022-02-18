@@ -127,6 +127,10 @@
     .show {
       display: block;
     }
+    .btnallcat{
+      position: sticky;
+      bottom: 10vh;
+}
 
     #btnforcat {
       background-color: #111;
@@ -135,42 +139,79 @@
       border: rgb(82, 77, 77) solid;
       border-radius: 20px;
       padding: 2px 8px;
-      position: fixed;
       font-size: 28px;
-      bottom: 10vh;
-      left: 42vw;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .collections h1{
+    .collections{
+      display: inline-block;
+    }
+    .collections h1 {
       text-align: center;
       padding-top: 18px;
     }
-    .availableitems h2{
+
+    .availableitems h2 {
       padding-left: 5vw;
     }
-    .cont1{
+
+    .cont1 {
       border: #a8a1a1 solid;
       box-shadow: 0px 15px 10px -15px #111;
       margin: 10px 10vw;
+      /* display: inline-block; */
       /* padding: 4px; */
-      height: 25em;
+      height: 24em;
       width: 16em;
       cursor: pointer;
     }
-    .cont1 img{
+
+    .cont1 img {
       height: auto;
       width: -webkit-fill-available;
     }
-    .discount{
+
+    .discount {
       background-color: green;
       text-align: center;
     }
-    .product h4{
+
+    .product h4 {
       text-align: center;
-      font-size: 1em;
+      font-size: 1.3em;
     }
-    .price h3{
+    .price{
       display: inline-block;
-      background-color: yellow;
+      padding: 1rem 2rem;
+    }
+    .price h3 {
+      display: flex;
+      width: fit-content;
+      padding: 2px;
+      /* background-color: yellow; */
+    }
+    .price h3:first-child {
+      color: grey;
+    }
+    .addBtn{
+    display: inline-flex;
+    float: right;
+    margin: 1em 1.5em;
+    padding: 0.3em 0.3em;
+    /* cursor: pointer; */
+    }
+    .btnToAdd{
+    align-items: center;
+    padding: 1px 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px
+    }
+    .btnToAdd:hover{
+      background-color: #111;
+      color: white;
     }
   </style>
 </head>
@@ -230,11 +271,17 @@
           </div>
           <div class="price">
             <h3> <del>&#8360; 649</del> </h3>
+            <h3 style="color: red;">&#8360;599</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
           </div>
         </div>
       </div>
     </div>
-    <button id="btnforcat">All Categories</button>
+    <div class="btnallcat">
+      <button id="btnforcat">All Categories</button>
+    </div>
   </div>
   <footer>
 
@@ -245,7 +292,8 @@
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
-    </script>
-    <script src="index.js"></script>
-    </body>
-    </html>
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
