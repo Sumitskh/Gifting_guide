@@ -155,18 +155,28 @@
       text-align: center;
       padding-top: 18px;
     }
-
+    .availableitems{
+      /* background-color: yellow; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #secondaryHeading{
+      /* display: block; */
+      width: 100vw;
+    }
     .availableitems h2 {
       padding-left: 5vw;
+      /* background-color: red; */
+      display: block;
     }
 
     .cont1 {
       border: #a8a1a1 solid;
       box-shadow: 0px 15px 10px -15px #111;
-      margin: 10px 10vw;
+      margin: 30px 2.5vw;
       /* display: inline-block; */
       /* padding: 4px; */
-      height: 24em;
+      height: 25em;
       width: 16em;
       cursor: pointer;
     }
@@ -180,11 +190,13 @@
       background-color: green;
       text-align: center;
     }
-
+    .product{
+      height: 44px;
+    }
     .product h4 {
       text-align: center;
       margin: auto;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
 
     .price {
@@ -222,7 +234,7 @@
     }
 
     .btnToAdd:hover {
-      background-color: #111;
+      background-color: grey;
       color: white;
     }
   </style>
@@ -270,11 +282,14 @@
     </nav>
   </header>
   <!-- End of Header -->
+  <!-- Start of Mainbody -->
   <div class="mainbody">
+    <!-- Div.Collections to make a box that contains all categories -->
     <div class="collections">
       <h1>Collections</h1>
+      <!-- Div.AvailableItems , First cat. of items -->
       <div class="availableitems">
-        <h2>Available Items</h2>
+       <div id="secondaryHeading"> <h2>Available Items</h2></div>
         <div class="cont1">
           <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/hpXrAa4F.jpeg" alt="img">
           <div class="discount">80% OFF</div>
@@ -283,21 +298,126 @@
           </div>
           <div class="price">
             <h3> <del>&#8360; 649</del> </h3>
-            <h3 style="color: red;">&#8360;599</h3>
+            <h3 style="color: red;">&#8360; 599</h3>
           </div>
           <div class="addBtn">
             <button class="btnToAdd">Add</button>
           </div>
         </div>
+        <!-- Copying container 1 to make more containers  -->
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/8CajfLuy.jpeg" alt="img">
+          <div class="discount">17% OFF</div>
+          <div class="product">
+            <h4>Mobile Stand</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 299</del> </h3>
+            <h3 style="color: red;">&#8360; 249</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/wXJFg0ec.jpeg" alt="img">
+          <div class="discount">21% OFF</div>
+          <div class="product">
+            <h4>LED Music Bulb</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 499</del> </h3>
+            <h3 style="color: red;">&#8360; 399</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/aleGFKkw.jpeg" alt="img">
+          <div class="discount">21% OFF</div>
+          <div class="product">
+            <h4>4D Name Keychain</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 249</del> </h3>
+            <h3 style="color: red;">&#8360; 199</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/IgZYq69v.jpeg" alt="img">
+          <div class="discount">11% OFF</div>
+          <div class="product">
+            <h4>Wooden Calender with Photo</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 669</del> </h3>
+            <h3 style="color: red;">&#8360; 599</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/Isga8qr3.jpeg" alt="img">
+          <div class="discount">34% OFF</div>
+          <div class="product">
+            <h4>Soft Toy Carrot Rabbit</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 299</del> </h3>
+            <h3 style="color: red;">&#8360; 199</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/r6bDVn80.jpeg" alt="img">
+          <div class="discount">19% OFF</div>
+          <div class="product">
+            <h4>3D Heart</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 799</del> </h3>
+            <h3 style="color: red;">&#8360; 649</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/Z1rpSG4N.jpeg" alt="img">
+          <div class="discount">20% OFF</div>
+          <div class="product">
+            <h4>Personalised Rotating Pen Holder</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 559</del> </h3>
+            <h3 style="color: red;">&#8360; 449</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <!-- End of all Container 1 -->
       </div>
+      <!-- End of Div.availableitems -->
     </div>
+    <!-- End of Div.Collections -->
     <div class="btnallcat">
       <button id="btnforcat">All Categories</button>
     </div>
   </div>
+  <!-- End Of MainBody -->
+  <!-- Start Of Footer -->
   <footer>
 
   </footer>
+  <!-- End of Footer -->
   <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
