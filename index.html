@@ -147,6 +147,9 @@
       margin-right: auto;
     }
 
+    /* .body{
+      width: 100vw;
+    } */
     .collections {
       display: inline-block;
     }
@@ -155,16 +158,19 @@
       text-align: center;
       padding-top: 18px;
     }
-    .availableitems{
+
+    .availableitems {
       /* background-color: yellow; */
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
-    #secondaryHeading{
+
+    #secondaryHeading {
       /* display: block; */
       width: 100vw;
     }
+
     .availableitems h2 {
       padding-left: 5vw;
       /* background-color: red; */
@@ -174,10 +180,10 @@
     .cont1 {
       border: #a8a1a1 solid;
       box-shadow: 0px 15px 10px -15px #111;
-      margin: 30px 2.5vw;
+      margin: 30px 2.2vw;
       /* display: inline-block; */
       /* padding: 4px; */
-      height: 25em;
+      height: auto;
       width: 16em;
       cursor: pointer;
     }
@@ -191,9 +197,16 @@
       background-color: green;
       text-align: center;
     }
-    .product{
+
+    .product {
       height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px 0px 15px 15px;
+      background-color: rgb(233, 218, 218);
     }
+
     .product h4 {
       text-align: center;
       margin: auto;
@@ -203,7 +216,7 @@
     .price {
       display: inline-block;
 
-      padding: 11px 20px;
+      padding: 11px 18px;
     }
 
     .price h3 {
@@ -221,7 +234,7 @@
     .addBtn {
       display: inline-flex;
       float: right;
-      margin: 10px 41px 10px 18px;
+      margin: 10px 36px 10px auto;
       padding: 10px;
       /* cursor: pointer; */
     }
@@ -237,6 +250,147 @@
     .btnToAdd:hover {
       background-color: grey;
       color: white;
+    }
+
+    .footer {
+      margin-top: 50px;
+    }
+
+    .footerPart1 {
+      display: flex;
+      padding: 3px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(236, 228, 228);
+    }
+
+    .footerPart1 p,
+    .num1 {
+      color: grey;
+    }
+
+    .num1 {
+      border: solid 1px grey;
+      padding: 6px;
+      border-radius: 20px;
+    }
+
+    .pay {
+      display: flex;
+      align-items: center;
+    }
+
+    .pay img {
+      width: 22vw;
+    }
+
+    .footerPart2 {
+      background-color: black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      display: none;
+    }
+
+    .footerBox {
+      border: solid white 2px;
+      color: white;
+      width: fit-content;
+      border-radius: 20px;
+      margin: 10px 15px;
+      padding: 6px 10px;
+    }
+
+    .breakwhiteline {
+      width: 100vw;
+      background-color: #fff;
+      height: 1px;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      color: white;
+    }
+
+    .footerpart0 {
+      display: flex;
+      padding: 15px;
+      background-color: rgb(54, 53, 53);
+      color: white;
+      justify-content: center;
+      /* align-items: center; */
+    }
+
+    .box2 {
+      margin: 1px 3vw;
+    }
+
+    .box2 ul li {
+      list-style-type: none;
+    }
+
+    .box2 h3 {
+      margin-bottom: 6px;
+    }
+
+    @media screen and (max-width: 499px) {
+      .footerPart2 {
+        display: flex;
+      }
+
+      .footerpart0 {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 590px) {
+      .cont1 {
+        width: 40vw;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      .addBtn {
+        margin: auto;
+      }
+
+      .price {
+        padding: 11px 6px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .product h4 {
+        font-size: 0.9em;
+      }
+
+      .btnToAdd {
+        font-size: 1em;
+      }
+
+      .price h3 {
+        font-size: 1em;
+      }
+
+      .discount {
+        font-size: 0.8em;
+      }
+    }
+
+    @media screen and (max-width: 370px) {
+      .product h4 {
+        font-size: 0.7em;
+      }
+
+      .price h3 {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
@@ -290,7 +444,9 @@
       <h1>Collections</h1>
       <!-- Div.AvailableItems , First cat. of items -->
       <div class="availableitems">
-       <div id="secondaryHeading"> <h2>Available Items</h2></div>
+        <div id="secondaryHeading">
+          <h2>Available Items</h2>
+        </div>
         <div class="cont1">
           <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/hpXrAa4F.jpeg" alt="img">
           <div class="discount">80% OFF</div>
@@ -404,6 +560,164 @@
             <button class="btnToAdd">Add</button>
           </div>
         </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/EXBbrPwh.jpeg" alt="img">
+          <div class="product">
+            <h4>Easel Stand (E-04) Size: 5x7"</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 499</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/ZiSk10yS.jpeg" alt="img">
+          <div class="product">
+            <h4>Easel Stand (E-03) Size: 5x7"</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 499</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/l7JGjG3v.jpeg" alt="img">
+          <div class="product">
+            <h4>Easel Stand (E-02) Size: 5x7"</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 499</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/EFA6HeAm.jpeg" alt="img">
+          <div class="product">
+            <h4>Easel Stand (E-01) Size: 5x7"</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 499</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/85GNjRny.jpeg" alt="img">
+          <div class="product">
+            <h4>Easel Stand (E-05) Size: 5x7"</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 499</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/31WzhmOK.jpeg" alt="img">
+          <div class="discount">21% OFF</div>
+          <div class="product">
+            <h4>MDF 3D Keychain</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 125</del> </h3>
+            <h3 style="color: red;">&#8360; 99</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/SkxtzqFw.jpeg" alt="img">
+          <div class="discount">21% OFF</div>
+          <div class="product">
+            <h4>3D Heart Keychain</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 125</del> </h3>
+            <h3 style="color: red;">&#8360; 99</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/eMyZTQzc.jpeg" alt="img">
+          <div class="discount">17% OFF</div>
+          <div class="product">
+            <h4>B-T Colour Changing Photo Speaker</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 799</del> </h3>
+            <h3 style="color: red;">&#8360; 649</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/GZCvXv86.jpeg" alt="img">
+          <div class="discount">11% OFF</div>
+          <div class="product">
+            <h4>Personalised Photo Bottle</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 499</del> </h3>
+            <h3 style="color: red;">&#8360; 449</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/jKHW29go.jpeg" alt="img">
+          <div class="discount">16% OFF</div>
+          <div class="product">
+            <h4>Alphabet Danglers</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 829</del> </h3>
+            <h3 style="color: red;">&#8360; 699</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/96ticOmX.jpeg" alt="img">
+          <div class="discount">19% OFF</div>
+          <div class="product">
+            <h4>Sis Bro Neon LED</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 1100</del> </h3>
+            <h3 style="color: red;">&#8360; 900</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/vawxAKRE.jpeg" alt="img">
+          <div class="discount">19% OFF</div>
+          <div class="product">
+            <h4>Bro/Sis LED acrlyc frames</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 1450</del> </h3>
+            <h3 style="color: red;">&#8360; 1200</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
         <!-- End of all Container 1 -->
       </div>
       <!-- End of Div.availableitems -->
@@ -415,8 +729,57 @@
   </div>
   <!-- End Of MainBody -->
   <!-- Start Of Footer -->
-  <footer>
+  <footer class="footer">
+    <div class="footerPart1">
+      <h4>Gifting Guide</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Sec-39, Rohini Delhi</p>
+      <span class="num1"><i class="fas fa-phone-alt"></i> 9899218680</span>
+      <span class="pay">Pay on Delevery using <img src="https://giftingguide.in/assets/images/icons@2x.png"
+          alt=""></span>
+    </div>
+    <div class="footerpart0">
+      <div class="topCategories box2">
+        <h3>Top Categories</h3>
+        <ul>
+          <li>Custom Mobile Case</li>
+          <li>Photo Mug</li>
+          <li>Photo Frames</li>
+          <li>Diwali Candels</li>
+        </ul>
+      </div>
+      <div class="About box2">
+        <h3>About</h3>
+        <ul>
+          <li>Careers</li>
+          <li>View Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
 
+      </div>
+      <div class="Help box2">
+        <h3>Help</h3>
+        <ul>
+          <li>Track an Order</li>
+          <li>Refunds And Cancellation</li>
+          <li>Contact us</li>
+        </ul>
+
+      </div>
+      <div class="Feedback box2">
+        <h3>Feedback</h3>
+        <ul>
+          <li>Leave a Feedback</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="footerPart2">
+      <div class="termConditions footerBox"> View Term & Conditions</div>
+      <div class="refundCancellation footerBox">Refunds & Cancellation</div>
+      <div class="reportStore footerBox"><i class="fas fa-flag"></i>&nbsp; Report Store</div>
+    </div>
+    <div class="breakwhiteline"></div>
+    <div class="copyright"> Gifting Guide 2022 &nbsp;<i class="far fa-copyright"></i>&nbsp; K_95</div>
   </footer>
   <!-- End of Footer -->
   <script>
