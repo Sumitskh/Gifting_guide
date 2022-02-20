@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gifting Guide - Order Online</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Stylesheet/style.css">
   <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
   <style>
     .navbar {
@@ -148,10 +148,11 @@
     }
 
     /* .body{
-      width: 100vw;
+      width: 100%;
     } */
     .collections {
       display: inline-block;
+      width: 100%;
     }
 
     .collections h1 {
@@ -159,19 +160,20 @@
       padding-top: 18px;
     }
 
-    .availableitems {
+    .availableitems,
+    .Heading1 {
       /* background-color: yellow; */
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
 
-    #secondaryHeading {
+    .secondaryHeading {
       /* display: block; */
-      width: 100vw;
+      width: 90%;
     }
 
-    .availableitems h2 {
+    .secondaryHeading h2 {
       padding-left: 5vw;
       /* background-color: red; */
       display: block;
@@ -252,6 +254,11 @@
       color: white;
     }
 
+    .customeMobileCase {
+      justify-content: flex-start;
+    }
+
+    /* Css of Footer */
     .footer {
       margin-top: 50px;
     }
@@ -264,14 +271,17 @@
       align-items: center;
       background-color: rgb(236, 228, 228);
     }
-    .footerPart1 h4{
+
+    .footerPart1 h4 {
       margin: auto;
     }
+
     .footerPart1 p,
     .num1 {
       color: grey;
       margin: 3px;
     }
+
     .num1 {
       border: solid 1px grey;
       padding: 6px;
@@ -307,7 +317,7 @@
     }
 
     .breakwhiteline {
-      width: 100vw;
+      width: 100%;
       background-color: #fff;
       height: 1px;
     }
@@ -315,6 +325,7 @@
     .copyright {
       display: flex;
       justify-content: center;
+      padding: 3px;
       align-items: center;
       background-color: #000;
       color: white;
@@ -332,9 +343,11 @@
     .box2 {
       margin: 1px 3vw;
     }
-    .box2 ul{
+
+    .box2 ul {
       padding: 0px;
     }
+
     .box2 ul li {
       list-style-type: none;
     }
@@ -356,6 +369,10 @@
     @media screen and (max-width: 590px) {
       .cont1 {
         width: 40vw;
+      }
+
+      .pay img {
+        width: 30vw;
       }
     }
 
@@ -385,6 +402,19 @@
       .discount {
         font-size: 0.8em;
       }
+
+      .footerBox {
+        font-size: 0.7em;
+      }
+
+      .footerPart1 p,
+      .num1 {
+        font-size: 0.7em;
+      }
+
+      #btnforcat {
+        font-size: 22px;
+      }
     }
 
     @media screen and (max-width: 370px) {
@@ -394,6 +424,22 @@
 
       .price h3 {
         font-size: 0.8em;
+      }
+
+      .footerBox {
+        font-size: 0.6em;
+      }
+
+      .pay img {
+        width: 40vw;
+      }
+
+      .addBtn {
+        padding: 10px 5px;
+      }
+
+      #btnforcat {
+        font-size: 20px;
       }
     }
   </style>
@@ -447,8 +493,8 @@
     <div class="collections">
       <h1>Collections</h1>
       <!-- Div.AvailableItems , First cat. of items -->
-      <div class="availableitems">
-        <div id="secondaryHeading">
+      <div class="availableitems Heading1">
+        <div class="secondaryHeading">
           <h2>Available Items</h2>
         </div>
         <div class="cont1">
@@ -722,9 +768,288 @@
             <button class="btnToAdd">Add</button>
           </div>
         </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/uevcud4D.jpeg" alt="img">
+          <div class="discount">13% OFF</div>
+          <div class="product">
+            <h4>Valentin's Couple Cushion (VC-02)</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 899</del> </h3>
+            <h3 style="color: red;">&#8360; 789</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/2XGPTeCZ.jpeg" alt="img">
+          <div class="discount">80% OFF</div>
+          <div class="product">
+            <h4>Valentin's Special Couple Ring</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 249</del> </h3>
+            <h3 style="color: red;">&#8360; 199</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
         <!-- End of all Container 1 -->
       </div>
       <!-- End of Div.availableitems -->
+      <!--Custom Moble Case start, css property change to "justify-content: flex-start" because of only one product-->
+      <div class="customeMobileCase Heading1">
+        <div class="secondaryHeading">
+          <h2>Custom Mobile Case</h2>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/Zwx5RlHq.jpeg" alt="img">
+          <div class="product">
+            <h4>Personalised Mobile Cover</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 250</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Photo Mug -->
+      <div class="photoMug Heading1">
+        <div class="secondaryHeading">
+          <h2>Photo Mug</h2>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/LBn5r7DJ.jpeg" alt="img">
+          <div class="product">
+            <h4>Personalised White Mug</h4>
+          </div>
+          <div class="price">
+            <h3 style="color: red;">&#8360; 250</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/Z7gaEFIA.jpeg" alt="img">
+          <div class="discount">15% OFF</div>
+          <div class="product">
+            <h4>Personalised Inner Colour Mug (Yellow)</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 350</del> </h3>
+            <h3 style="color: red;">&#8360; 300</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/PTS4Bfwv.jpeg" alt="img">
+          <div class="discount">13% OFF</div>
+          <div class="product">
+            <h4>Personalised Patch Mug (Black)</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 399</del> </h3>
+            <h3 style="color: red;">&#8360; 349</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/7xHA5sMM.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>Magic Mug</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 450</del> </h3>
+            <h3 style="color: red;">&#8360; 400</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/OzeMHnMM.jpeg" alt="img">
+          <div class="discount">13% OFF</div>
+          <div class="product">
+            <h4>Red Patch Mug</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 399</del> </h3>
+            <h3 style="color: red;">&#8360; 349</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/myTmmtd0.jpeg" alt="img">
+          <div class="discount">13% OFF</div>
+          <div class="product">
+            <h4>Navi Blue Patch Mug</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 399</del> </h3>
+            <h3 style="color: red;">&#8360; 349</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="customeCushion Heading1">
+        <div class="secondaryHeading">
+          <h2>Custom Cushion</h2>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/I32S7SjF.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>Red Heart Fur Cushion</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 450</del> </h3>
+            <h3 style="color: red;">&#8360; 400</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/AaYHvWKD.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>Red Square Cushion (Fur)</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 450</del> </h3>
+            <h3 style="color: red;">&#8360; 400</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/zXfKsIZT.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>White Cushion (Size - 16*16"</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 450</del> </h3>
+            <h3 style="color: red;">&#8360; 400</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/DEAPuDtx.jpeg" alt="img">
+          <div class="discount">15% OFF</div>
+          <div class="product">
+            <h4>Personalised Cushion (16*16")</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 779</del> </h3>
+            <h3 style="color: red;">&#8360; 669</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/BCtJqMum.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>Velvet/Satin Printed Pillow</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 899</del> </h3>
+            <h3 style="color: red;">&#8360; 769</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/Bkka1ObR.jpeg" alt="img">
+          <div class="discount">3% OFF</div>
+          <div class="product">
+            <h4>S<i class="fas fa-heart"></i>M Latter Pillow</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 750</del> </h3>
+            <h3 style="color: red;">&#8360; 730</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/eqzChjZ0.jpeg" alt="img">
+          <div class="discount">13% OFF</div>
+          <div class="product">
+            <h4>Love Letter Pillow</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 1000</del> </h3>
+            <h3 style="color: red;">&#8360; 879</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/XgW4RI7j.jpeg" alt="img">
+          <div class="discount">8% OFF</div>
+          <div class="product">
+            <h4>Magic Cushion</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 799</del> </h3>
+            <h3 style="color: red;">&#8360; 739</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/v5yF104G.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>White Magic Cushion</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 799</del> </h3>
+            <h3 style="color: red;">&#8360; 739</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+        <div class="cont1">
+          <img src="https://cdn.dotpe.in/longtail/item_thumbnails/937577/En5BQv5r.jpeg" alt="img">
+          <div class="discount">12% OFF</div>
+          <div class="product">
+            <h4>Teddy Pillow</h4>
+          </div>
+          <div class="price">
+            <h3> <del>&#8360; 899</del> </h3>
+            <h3 style="color: red;">&#8360; 799</h3>
+          </div>
+          <div class="addBtn">
+            <button class="btnToAdd">Add</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End of Div.Collections -->
     <div class="btnallcat">
@@ -734,6 +1059,7 @@
   <!-- End Of MainBody -->
   <!-- Start Of Footer -->
   <footer class="footer">
+    <!-- footer Part 1 Start -->
     <div class="footerPart1">
       <h4>Gifting Guide</h4>
       <p><i class="fas fa-map-marker-alt"></i> Sec-39, Rohini Delhi</p>
@@ -741,6 +1067,8 @@
       <span class="pay">Pay on Delevery using <img src="https://giftingguide.in/assets/images/icons@2x.png"
           alt=""></span>
     </div>
+    <!-- Part 1 End -->
+    <!-- Part 2 Start -->
     <div class="footerpart0">
       <div class="topCategories box2">
         <h3>Top Categories</h3>
@@ -757,6 +1085,7 @@
           <li>Careers</li>
           <li>View Terms & Conditions</li>
           <li>Privacy Policy</li>
+          <li>About us</li>
         </ul>
 
       </div>
@@ -777,6 +1106,8 @@
 
       </div>
     </div>
+    <!-- Part 0 End -->
+    <!-- Part 2 Start -->
     <div class="footerPart2">
       <div class="termConditions footerBox"> View Term & Conditions</div>
       <div class="refundCancellation footerBox">Refunds & Cancellation</div>
@@ -785,6 +1116,7 @@
     <div class="breakwhiteline"></div>
     <div class="copyright"> Gifting Guide 2022 &nbsp;<i class="far fa-copyright"></i>&nbsp; K_95</div>
   </footer>
+  <!-- Part 2 End -->
   <!-- End of Footer -->
   <script>
     /* When the user clicks on the button, 
@@ -793,7 +1125,7 @@
       document.getElementById("myDropdown").classList.toggle("show");
     }
   </script>
-  <script src="index.js"></script>
+  <script src="Javascript/script.js"></script>
 </body>
 
 </html>
