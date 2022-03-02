@@ -560,3 +560,14 @@
       color: #000;
     }
   }
+  /* About Us page styling */
+
+  .aboutUs{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutHeading h1{
+    text-align: center;
+  }
