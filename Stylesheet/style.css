@@ -634,8 +634,8 @@
       height: auto;
     }
     .remainingPartBox1{
-     flex-direction: column;
-
+      flex-direction: column;
+      
     }
     .closeBtnBox{
       margin-top: -100px;
@@ -675,7 +675,7 @@
       width: 30vw;
     }
   }
-
+  
   @media screen and (max-width: 575px) {
     .addBtn {
       margin: auto;
@@ -703,6 +703,10 @@
     }
     #addToCart, #buyNow{
       padding: 6px 12%;
+    }
+    #modal2Image{
+      width: 21em;
+      height: auto;
     }
   }
   
@@ -768,9 +772,26 @@
       padding: 5px 10%;
       font-size: 1.1em;
     }
+    .modalContent2{
+      height: 65%;
+    }
+    #modal2Image{
+      width: 20em;
+      height: auto;
+    }
   }
-  
+  @media screen and (max-width:340px) {
+    #modal2Image{
+      width: 18em;
+    }
+    .modalContent2{
+      height: 62%;
+    }
+  }
   @media screen and (max-width:290px) {
+    #modal2Image{
+      width: 17em;
+    }
     #addToCart, #buyNow{
       padding: 5px 10%;
       font-size: 1em;
