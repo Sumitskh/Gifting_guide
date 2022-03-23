@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 .navbar {
     background-color: whitesmoke;
     box-shadow: 0px 15px 10px -15px #111;
@@ -345,12 +345,12 @@
   .box2 ul li {
       list-style-type: none;
     }
-  .box2 ul li a{
-      text-decoration : none;
-      color : white;
-      cursor : pointer;
+    .box2 ul li a{
+      text-decoration: none;
+        color: #fff;
+        cursor: pointer;
     }
-  .box2 ul li a:hover{
+    .box2 ul li a:hover{
         text-decoration: underline;
     }
 
@@ -361,7 +361,7 @@
 
   /* Styling for Modal (Categories Button) */
 
-  .modalForAC {
+  .modalForAC{
     display: none;
     position: fixed;
     z-index: 1;
@@ -424,6 +424,105 @@
     font-size: 1.4em;
   }
 
+  /*  Styling for modal For Product */
+
+  .modalForProduct{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  .modalContent2{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    top: 10%;
+    left: 10%;
+    /* height: 80%; */
+    width: 80%;
+    padding: 3% 2% 5% 2%;
+    box-shadow: 10px 10px 10px -10px #111;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-delay: 0.4s;
+    animation-name: slideIn;
+    animation-delay: 0.4s;
+  }
+  .remainingPartBox1{
+    display: flex;
+  }
+  .imageForModal{
+    display: flex;
+    height: auto;
+    width: 100em;
+    /* margin-top: 5%; */
+    align-items: center;
+    
+  }
+  .productDetails{
+    margin: 5%;
+  }
+  .closeBtnPD{
+    display: flex;
+    float: right;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closeBtnPD:hover,
+  .closeBtnPD:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .remainingPartBox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .addToCartBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #addToCart{
+    color: red;
+    background-color: #fff;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 1.5% 10%;
+  }
+  #addToCart:hover{
+    color: #fff;
+    background-color: red;
+  }
+  #buyNow{
+    color: #fff;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 1.5% 12%;
+  }
+  #buyNow:hover{
+    color: red;
+    background-color: #fff;
+  }
+  #modal2Image{
+    width: 100%;
+    height: 100%;
+  }
   /* Add Animation */
   @-webkit-keyframes slideIn {
     from {
@@ -463,29 +562,110 @@
     from {
       opacity: 0;
     }
-
+    
     to {
       opacity: 1;
     }
   }
+  /* Mediea Queries Start (to make website responsive) */
 
-  @media screen and (max-width: 499px) {
-    .footerPart2 {
-      display: flex;
-    }
-
-    .footerpart0 {
-      display: none;
-    }
-
-    .modalContent1 {
-      top: auto;
-      left: auto;
-      bottom: 0;
-      width: 100%;
+  @media screen and (max-width: 1000px) {
+    #addToCart, #buyNow{
+      padding: 1% 30px;
     }
   }
+  @media  screen and (max-width: 900px) {
+    #addToCart, #buyNow{
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .closeBtn {
+      color: #000;
+    }
+    #addToCart, #buyNow{
+      font-size: 1.1em;
+    }
+    .imageForModal{
+      height: 14em;
+      width: 85em;
+      margin-top: 8%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #addToCart, #buyNow{
+      font-size: 1em;
+    }
+    .productDetails{
+      font-size: 15px;
+    }
+    .imageForModal{
+      height: 12em;
+      width: 80em;
+      margin-top: 8%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .imageForModal{
+      height: 12em;
+      width: 80em;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .modalContent2{
+      width: 100%;
+      height: 70%;
+      top: auto;
+      left: 0;
+      bottom: 0 ;
+      justify-content: space-between;
+      padding: 3% 0;
+    }
+    .imageForModal{
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3%;
+    }
+    #modal2Image{
+      width: 20em;
+      height: auto;
+    }
+    .remainingPartBox1{
+     flex-direction: column;
 
+    }
+    .closeBtnBox{
+      margin-top: -100px;
+    }
+    .closeBtnPD{
+      justify-content: center;
+      float: none;
+      margin: 0;
+      font-size: 45px;
+    }
+    #addToCart, #buyNow{
+      font-size: 1.3em;
+      padding: 8px 14%;
+      border-radius: 10px;
+    }
+    .productDetails{
+      margin: 0;
+    }
+    .product{
+      border-radius: 0;
+    }
+    .productDetailsAbout{
+      margin: 1%;
+      height: 50px;
+      overflow: scroll;
+    }
+    #modal2Discount{
+      display: block;
+    }
+  }
   @media screen and (max-width: 590px) {
     .cont1 {
       width: 40vw;
@@ -500,12 +680,32 @@
     .addBtn {
       margin: auto;
     }
-
+    
     .price {
       padding: 11px 6px;
     }
   }
+  
+  @media screen and (max-width: 499px) {
+    .footerPart2 {
+      display: flex;
+    }
+    
+    .footerpart0 {
+      display: none;
+    }
 
+    .modalContent1 {
+      top: auto;
+      left: auto;
+      bottom: 0;
+      width: 100%;
+    }
+    #addToCart, #buyNow{
+      padding: 6px 12%;
+    }
+  }
+  
   @media screen and (max-width: 430px) {
     .product h4 {
       font-size: 0.9em;
@@ -531,12 +731,15 @@
     .num1 {
       font-size: 0.7em;
     }
-
+    
     #btnforcat {
       font-size: 22px;
     }
+    #addToCart, #buyNow{
+      padding: 5px 11%;
+    }
   }
-
+  
   @media screen and (max-width: 370px) {
     .product h4 {
       font-size: 0.7em;
@@ -561,13 +764,20 @@
     #btnforcat {
       font-size: 20px;
     }
-  }
-
-  @media screen and (max-width: 800px) {
-    .closeBtn {
-      color: #000;
+    #addToCart, #buyNow{
+      padding: 5px 10%;
+      font-size: 1.1em;
     }
   }
+  
+  @media screen and (max-width:290px) {
+    #addToCart, #buyNow{
+      padding: 5px 10%;
+      font-size: 1em;
+    }
+    
+}
+ 
   /* About Us page styling */
 
   .aboutUs{
@@ -578,4 +788,7 @@
   }
   .aboutHeading h1{
     text-align: center;
+  }
+  .extraStyleForProductDetails{
+    display: inline-flex;
   }
