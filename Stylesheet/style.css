@@ -359,7 +359,7 @@
   }
 
 
-  /* Styling for Modal (Categories Button) */
+  /*********************** Styling for Modal (Categories Button) */
 
   .modalForAC{
     display: none;
@@ -424,7 +424,7 @@
     font-size: 1.4em;
   }
 
-  /*  Styling for modal For Product */
+  /*************************************************************  Styling for modal For Product */
 
   .modalForProduct{
     display: none;
@@ -463,8 +463,7 @@
   }
   .imageForModal{
     display: flex;
-    height: auto;
-    width: 100em;
+    width: 130%;
     /* margin-top: 5%; */
     align-items: center;
     
@@ -521,7 +520,6 @@
   }
   #modal2Image{
     width: 100%;
-    height: 100%;
   }
   /* Add Animation */
   @-webkit-keyframes slideIn {
@@ -567,7 +565,7 @@
       opacity: 1;
     }
   }
-  /* Mediea Queries Start (to make website responsive) */
+  /******************************* Mediea Queries Start (to make website responsive) */
 
   @media screen and (max-width: 1000px) {
     #addToCart, #buyNow{
@@ -586,10 +584,8 @@
     #addToCart, #buyNow{
       font-size: 1.1em;
     }
-    .imageForModal{
-      height: 14em;
-      width: 85em;
-      margin-top: 8%;
+    .modalContent2{
+      padding: 2%;
     }
   }
   @media screen and (max-width: 750px) {
@@ -599,22 +595,16 @@
     .productDetails{
       font-size: 15px;
     }
-    .imageForModal{
-      height: 12em;
-      width: 80em;
-      margin-top: 8%;
-    }
   }
   @media screen and (max-width: 650px) {
     .imageForModal{
-      height: 12em;
-      width: 80em;
+      width: 200%;
     }
   }
   @media screen and (max-width: 640px) {
     .modalContent2{
       width: 100%;
-      height: 70%;
+      height: 75%;
       top: auto;
       left: 0;
       bottom: 0 ;
@@ -622,29 +612,27 @@
       padding: 3% 0;
     }
     .imageForModal{
-      height: fit-content;
+      /* height: fit-content; */
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 3%;
     }
     #modal2Image{
-      width: 20em;
-      height: auto;
+      width: 39%;
     }
     .remainingPartBox1{
       flex-direction: column;
       
     }
     .closeBtnBox{
-      margin-top: -100px;
+      margin-top: -60px;
     }
     .closeBtnPD{
       justify-content: center;
       float: none;
       margin: 0;
-      font-size: 45px;
+      font-size: 30px;
     }
     #addToCart, #buyNow{
       font-size: 1.3em;
@@ -705,7 +693,7 @@
       padding: 6px 12%;
     }
     #modal2Image{
-      width: 21em;
+      width: 53%;
       height: auto;
     }
   }
@@ -772,25 +760,25 @@
       padding: 5px 10%;
       font-size: 1.1em;
     }
-    .modalContent2{
+    /* .modalContent2{
       height: 65%;
-    }
+    } */
     #modal2Image{
-      width: 20em;
+      width: 75%;
       height: auto;
     }
   }
   @media screen and (max-width:340px) {
     #modal2Image{
-      width: 18em;
+      width: 82%;
     }
-    .modalContent2{
+    /* .modalContent2{
       height: 62%;
-    }
+    } */
   }
   @media screen and (max-width:290px) {
     #modal2Image{
-      width: 17em;
+      width: 99%;
     }
     #addToCart, #buyNow{
       padding: 5px 10%;
@@ -799,7 +787,7 @@
     
 }
  
-  /* About Us page styling */
+  /***************************************** About Us page styling **********************************/
 
   .aboutUs{
     padding: 10px 15px;
