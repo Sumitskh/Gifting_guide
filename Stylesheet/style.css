@@ -519,7 +519,7 @@
     background-color: #fff;
   }
   #modal2Image{
-    width: 100%;
+    height: 222px;
   }
   /* Add Animation */
   @-webkit-keyframes slideIn {
@@ -566,6 +566,13 @@
     }
   }
   /******************************* Mediea Queries Start (to make website responsive) */
+
+  @media screen and (min-width: 1024px) {
+    #modal2Image{
+      height: 320px;
+    }
+  }
+
 
   @media screen and (max-width: 1000px) {
     #addToCart, #buyNow{
@@ -618,9 +625,9 @@
       justify-content: center;
       align-items: center;
     }
-    #modal2Image{
+    /* #modal2Image{
       width: 39%;
-    }
+    } */
     .remainingPartBox1{
       flex-direction: column;
       
@@ -692,10 +699,10 @@
     #addToCart, #buyNow{
       padding: 6px 12%;
     }
-    #modal2Image{
+    /* #modal2Image{
       width: 53%;
       height: auto;
-    }
+    } */
   }
   
   @media screen and (max-width: 430px) {
@@ -763,41 +770,26 @@
     /* .modalContent2{
       height: 65%;
     } */
-    #modal2Image{
+    /* #modal2Image{
       width: 75%;
       height: auto;
-    }
+    } */
   }
   @media screen and (max-width:340px) {
-    #modal2Image{
+    /* #modal2Image{
       width: 82%;
-    }
+    } */
     /* .modalContent2{
       height: 62%;
     } */
   }
   @media screen and (max-width:290px) {
-    #modal2Image{
+    /* #modal2Image{
       width: 99%;
-    }
+    } */
     #addToCart, #buyNow{
       padding: 5px 10%;
       font-size: 1em;
     }
     
 }
- 
-  /***************************************** About Us page styling **********************************/
-
-  .aboutUs{
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .aboutHeading h1{
-    text-align: center;
-  }
-  .extraStyleForProductDetails{
-    display: inline-flex;
-  }
